@@ -10,9 +10,10 @@
 		866409B42200A83F00EBDCAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866409B32200A83F00EBDCAD /* AppDelegate.swift */; };
 		866409B62200A83F00EBDCAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866409B52200A83F00EBDCAD /* ViewController.swift */; };
 		866409B92200A83F00EBDCAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 866409B72200A83F00EBDCAD /* Main.storyboard */; };
-		866409BB2200A84100EBDCAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 866409BA2200A84100EBDCAD /* Assets.xcassets */; };
 		866409BE2200A84100EBDCAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 866409BC2200A84100EBDCAD /* LaunchScreen.storyboard */; };
 		866409C92200A84100EBDCAD /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866409C82200A84100EBDCAD /* FoodTrackerTests.swift */; };
+		86D935FC2202220300FB2344 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D935FB2202220300FB2344 /* RatingControl.swift */; };
+		86D935FE22022A9F00FB2344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86D935FD22022A9F00FB2344 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +31,13 @@
 		866409B32200A83F00EBDCAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		866409B52200A83F00EBDCAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		866409B82200A83F00EBDCAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		866409BA2200A84100EBDCAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		866409BD2200A84100EBDCAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		866409BF2200A84100EBDCAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		866409C42200A84100EBDCAD /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		866409C82200A84100EBDCAD /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		866409CA2200A84100EBDCAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86D935FB2202220300FB2344 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		86D935FD22022A9F00FB2344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +79,11 @@
 		866409B22200A83F00EBDCAD /* FoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				86D935FD22022A9F00FB2344 /* Assets.xcassets */,
 				866409B32200A83F00EBDCAD /* AppDelegate.swift */,
 				866409B52200A83F00EBDCAD /* ViewController.swift */,
+				86D935FB2202220300FB2344 /* RatingControl.swift */,
 				866409B72200A83F00EBDCAD /* Main.storyboard */,
-				866409BA2200A84100EBDCAD /* Assets.xcassets */,
 				866409BC2200A84100EBDCAD /* LaunchScreen.storyboard */,
 				866409BF2200A84100EBDCAD /* Info.plist */,
 			);
@@ -177,7 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				866409BE2200A84100EBDCAD /* LaunchScreen.storyboard in Resources */,
-				866409BB2200A84100EBDCAD /* Assets.xcassets in Resources */,
+				86D935FE22022A9F00FB2344 /* Assets.xcassets in Resources */,
 				866409B92200A83F00EBDCAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				866409B62200A83F00EBDCAD /* ViewController.swift in Sources */,
+				86D935FC2202220300FB2344 /* RatingControl.swift in Sources */,
 				866409B42200A83F00EBDCAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,16 +363,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9K9XT43LKM;
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FoodTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thdespou.FoodTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -379,16 +385,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9K9XT43LKM;
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FoodTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thdespou.FoodTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
